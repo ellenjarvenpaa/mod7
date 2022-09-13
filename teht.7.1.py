@@ -5,6 +5,14 @@ vuodenajat = ("Kevät", "Kesä", "Syksy", "Talvi")
 
 järjestysnumero = int(input("Anna kuukauden järjestysnumero (1-12): "))
 
-vuodenaika = kuukaudet, vuodenajat[järjestysnumero-1]
+if järjestysnumero == kuukaudet[11:1]:
+    print(vuodenajat[3])
 
-print (f"{järjestysnumero}. kuukausi on {vuodenaika}")
+if järjestysnumero == kuukaudet[2:4]:
+    print(vuodenajat[0])
+
+if järjestysnumero == kuukaudet[5:7]:
+    print(vuodenajat[1])
+
+if järjestysnumero == kuukaudet[8:10]:
+    print(vuodenajat[2])
